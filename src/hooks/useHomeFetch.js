@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 //APIS
 import API from "../API";
 //Helpers
@@ -36,7 +36,7 @@ export const useHomeFetch = () => {
     setLoading(false);
   };
 
-  //initail and search
+  //initial and search
   useEffect(() => {
     if (!searchTerm) {
       const sessionState = isPersistedState("homeState");
